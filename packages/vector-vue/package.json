@@ -22,5 +22,13 @@
   },
   "bugs": {
     "url": "https://github.com/980320/Vector/issues"
+  },
+  "dependencies": {
+    "@storybook/test": "^8.1.8",
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.2.13"
   }
 }
