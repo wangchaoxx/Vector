@@ -1,7 +1,9 @@
 'use strict';
+import Vue from 'vue';
 
-module.exports = vectorVue;
-
-function vectorVue() {
-  return 'Hello from vectorVue';
-}
+import MyComponent from './MyComponent.vue';
+export default {
+  install: function (Vue) {
+    Vue.component('my-component', MyComponent);
+  }
+};
