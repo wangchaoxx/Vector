@@ -1,5 +1,5 @@
 {
-  "name": "@vector/cli",
+  "name": "@wang_chao/cli",
   "version": "0.0.3",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
@@ -26,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/980320/Vector/issues"
   },
-  "gitHead": "80a75b710ce44ffddb3ef48e754205453fc458ce"
+  "gitHead": "86220f4d6e09717a88c8109b7e204d5af990829b"
 }
