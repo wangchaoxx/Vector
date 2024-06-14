@@ -3,28 +3,40 @@
 </template>
 
 <script lang="ts" setup>
+
 import './index.css';
 import { Button } from 'ant-design-vue'
+
 const props = withDefaults(defineProps<{
+  block?: boolean,
   /**
    * The label of the button
    */
   label: string,
   /**
-   * primary or secondary button
+   * 设置危险按钮	
    */
-  primary?: boolean,
+  danger?: boolean,
   /**
-   * size of the button
+   * 点击跳转的地址，指定此属性 button 的行为和 a 链接一致	
    */
-  size?: 'small' | 'medium' | 'large',
-  type?: 'primary',
+  href?: string,
   /**
-   * background color of the button
+   * 设置按钮大小
    */
-  backgroundColor?: string,
+  size?: 'large' | 'middle' | 'small',
+  type?: 'primary' | 'ghost' | 'dashed' | 'link' | 'text' | 'default',
+  /**
+   * 幽灵属性，使按钮背景透明	
+   */
+  ghost?: boolean,
+  /**
+   * 点击按钮时的回调
+   * @param e 
+   */
+   onClick?: (e: MouseEvent) => void,
 
-}>(), { primary: false });
+}>(), { type: 'default', size:'middle',block: false, ghost: false, danger: false, onClick: () => {} });
 
 const emit = defineEmits<{
   (e: 'click', id: number): void;
