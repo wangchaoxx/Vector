@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import './MyComponent.css';
+import './MyButton.css';
 import { reactive, computed } from 'vue';
 
 export default {
