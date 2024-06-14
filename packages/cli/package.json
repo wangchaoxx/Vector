@@ -1,6 +1,6 @@
 {
   "name": "@wang_chao/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
   "homepage": "https://github.com/980320/Vector#readme",
@@ -26,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/980320/Vector/issues"
   },
-  "gitHead": "0a4e120ab192c56c1c7bf00adc36f87c47db8a76"
+  "gitHead": "dd628e624100c8f65d9a4b638a02e7ab20ddb0be"
 }
