@@ -6,7 +6,9 @@
     "publish": {
       "lifecycle": {
         "prepublish": "pnpm run build"
-      }
+      },
+      "conventionalCommits": true,
+      "message": "chore(release): publish"
     }
   },
   "version": "independent"
