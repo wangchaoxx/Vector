@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.6](https://github.com/980320/Vector/compare/@wang_chao/atom@0.1.1...@wang_chao/atom@0.0.6) (2024-06-14)
+
+**Note:** Version bump only for package @wang_chao/atom
+
+
+
+
+
 ## [0.0.5](https://github.com/980320/Vector/compare/@wang_chao/atom@0.1.1...@wang_chao/atom@0.0.5) (2024-06-14)
 
 **Note:** Version bump only for package @wang_chao/atom
