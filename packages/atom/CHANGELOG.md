@@ -1,3 +1,19 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [0.1.0](https://github.com/980320/Vector/compare/@wang_chao/atom@0.0.8...@wang_chao/atom@0.1.0) (2024-06-14)
+
+
+### Features
+
+* Button com ([91bfc4e](https://github.com/980320/Vector/commit/91bfc4e29507f6793d4e1eefbd848325aeb55252))
+
+
+
+
+
 ## <small>0.0.4 (2024-06-14)</small>
 
 * feat: 组件库更新 ([36ae660](https://github.com/980320/Vector/commit/36ae660))
@@ -53,6 +69,3 @@
 * v0.0.1 ([eaff9cc](https://github.com/980320/Vector/commit/eaff9cc))
 * chore: 添加忽略文件 ([addf560](https://github.com/980320/Vector/commit/addf560))
 * chore: atom ([0775854](https://github.com/980320/Vector/commit/0775854))
-
-
-

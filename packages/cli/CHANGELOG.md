@@ -1,3 +1,16 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.1.3](https://github.com/980320/Vector/compare/@wang_chao/cli@0.1.2...@wang_chao/cli@0.1.3) (2024-06-14)
+
+**Note:** Version bump only for package @wang_chao/cli
+
+
+
+
+
 ## <small>0.1.2 (2024-06-14)</small>
 
 * feat: 组件库更新 ([36ae660](https://github.com/980320/Vector/commit/36ae660))
@@ -53,6 +66,3 @@
 * v0.0.1 ([eaff9cc](https://github.com/980320/Vector/commit/eaff9cc))
 * chore: 添加忽略文件 ([addf560](https://github.com/980320/Vector/commit/addf560))
 * chore: atom ([0775854](https://github.com/980320/Vector/commit/0775854))
-
-
-
