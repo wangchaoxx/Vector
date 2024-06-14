@@ -1,12 +1,14 @@
 {
   "name": "@wang_chao/atom",
-  "version": "0.0.3",
+  "private": true,
+  "version": "0.0.4",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
   "homepage": "https://github.com/980320/Vector#readme",
   "license": "ISC",
   "main": "dist/atom.umd.js",
   "module": "dist/atom.es.js",
+  "type": "module",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -20,20 +22,32 @@
     "url": "git+https://github.com/980320/Vector.git"
   },
   "scripts": {
-    "test": "node ./__tests__/atom.test.js",
-    "build": "vite build",
-    "prepublishOnly": "pnpm run build"
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "bugs": {
     "url": "https://github.com/980320/Vector/issues"
   },
   "dependencies": {
-    "@storybook/test": "^8.1.8",
-    "vue": "^3.4.27"
+    "ant-design-vue": "^4.2.3",
+    "vue": "^3.4.21"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "vite": "^5.2.13"
-  },
-  "gitHead": "2949eab360b276f3f1cc3533dbf3b687b6b7eb2f"
+    "@chromatic-com/storybook": "^1.5.0",
+    "@storybook/addon-essentials": "^8.1.9",
+    "@storybook/addon-interactions": "^8.1.9",
+    "@storybook/addon-links": "^8.1.9",
+    "@storybook/blocks": "^8.1.9",
+    "@storybook/test": "^8.1.9",
+    "@storybook/vue3": "^8.1.9",
+    "@storybook/vue3-vite": "^8.1.9",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "storybook": "^8.1.9",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
 }
