@@ -1,6 +1,6 @@
 {
   "name": "vector-vue-theme",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
   "homepage": "https://github.com/980320/Vector#readme",
@@ -39,5 +39,5 @@
     "@storybook/vue3-vite": "8.1.7",
     "storybook": "8.1.7"
   },
-  "gitHead": "86220f4d6e09717a88c8109b7e204d5af990829b"
+  "gitHead": "f47df5d91ab8dcd17743c8bf55cacdb3acfb2926"
 }

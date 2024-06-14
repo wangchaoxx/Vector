@@ -1,6 +1,6 @@
 {
   "name": "vector-vue",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
   "homepage": "https://github.com/980320/Vector#readme",
@@ -34,5 +34,5 @@
     "@vitejs/plugin-vue": "^5.0.5",
     "vite": "^5.2.13"
   },
-  "gitHead": "86220f4d6e09717a88c8109b7e204d5af990829b"
+  "gitHead": "f47df5d91ab8dcd17743c8bf55cacdb3acfb2926"
 }
