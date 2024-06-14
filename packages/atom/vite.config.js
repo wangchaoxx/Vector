@@ -7,7 +7,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.js'), // 入口文件路径
       name: 'VectorVue',
-      fileName: (format) => `vector-vue.${format}.js`,
+      fileName: (format) => `atom.${format}.js`,
       formats: ['es', 'cjs', 'umd']
     },
     rollupOptions: {

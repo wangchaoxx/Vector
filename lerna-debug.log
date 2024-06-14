@@ -1,8 +1,10 @@
-53 error Error: Command failed with exit code 128: git push --follow-tags --no-verify --atomic origin feature/20230719-theme
-53 error kex_exchange_identification: Connection closed by remote host
-53 error Connection closed by 127.0.0.1 port 7890
-53 error 致命错误：无法读取远程仓库。
-53 error
-53 error 请确认您有正确的访问权限并且仓库存在。
-53 error     at makeError (/Users/wangchao/i/Vector/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
-53 error     at handlePromise (/Users/wangchao/i/Vector/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
+62 warn complete Waiting for 1 child process to exit. CTRL-C to exit immediately.
+63 error Error: Command failed with exit code 128: git tag atom@0.0.1 -m atom@0.0.1
+63 error 致命错误：标签 'atom@0.0.1' 已存在
+63 error     at makeError (/Users/wangchao/i/Vector/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
+63 error     at handlePromise (/Users/wangchao/i/Vector/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
+63 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+63 error     at async Promise.all (index 2)
+63 error     at async VersionCommand.gitCommitAndTagVersionForUpdates (/Users/wangchao/i/Vector/node_modules/.pnpm/lerna@8.1.3_encoding@0.1.13/node_modules/lerna/dist/index.js:8536:11)
+63 error     at async VersionCommand.commitAndTagUpdates (/Users/wangchao/i/Vector/node_modules/.pnpm/lerna@8.1.3_encoding@0.1.13/node_modules/lerna/dist/index.js:8511:18)
+63 error     at async Promise.all (index 0)

@@ -15,7 +15,7 @@ function getAbsolutePath(value) {
 
 /** @type { import('@storybook/vue3-vite').StorybookConfig } */
 const config = {
-  stories: ['../../vector-vue/src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
+  stories: ['../../atom/src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
 
   addons: [
     getAbsolutePath("@storybook/addon-links"),
@@ -35,7 +35,7 @@ const config = {
       plugins: [vue()],
       resolve: {
         alias: {
-          '@': path.resolve(__dirname, '../../vector-vue/src'),
+          '@': path.resolve(__dirname, '../../atom/src'),
         },
       },
       server: {

@@ -1,5 +1,5 @@
 node_modules/
 *storybook.log
 
-packages/vector-vue/dist/*
-packages/vector-vue-theme/storybook-static/*
+packages/atom/dist/*
+packages/atom-theme/storybook-static/*

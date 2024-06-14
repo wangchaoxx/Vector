@@ -1,11 +1,11 @@
-# `vector-vue`
+# `atom-theme`
 
 > TODO: description
 
 ## Usage
 
 ```
-const vectorVue = require('vector-vue');
+const vectorVueTheme = require('atom-theme');
 
 // TODO: DEMONSTRATE API
 ```
