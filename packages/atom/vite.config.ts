@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-const path = require('path')
+import path from 'path';
+
 export default defineConfig({
   plugins: [vue()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/index.js'), // 入口文件路径
+      entry: path.resolve(__dirname, 'src/main.ts'), // 入口文件路径
       name: 'VectorVue',
       fileName: (format) => `atom.${format}.js`,
       formats: ['es', 'cjs', 'umd']
