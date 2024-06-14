@@ -1,5 +1,5 @@
 {
-  "name": "@wang_chao/vector-vue",
+  "name": "vector-vue",
   "version": "0.0.2",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
@@ -35,5 +35,5 @@
     "@vitejs/plugin-vue": "^5.0.5",
     "vite": "^5.2.13"
   },
-  "gitHead": "a0aea7e88fc8ca0b4e97078b5ac9ab04d00eaae0"
+  "gitHead": "e0aa47524bd20d519b660283e25989a6f4184f4e"
 }
