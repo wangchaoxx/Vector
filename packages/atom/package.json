@@ -1,7 +1,7 @@
 {
   "name": "@wang_chao/atom",
   "private": true,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
   "homepage": "https://github.com/980320/Vector#readme",
@@ -14,7 +14,6 @@
     "test": "__tests__"
   },
   "files": [
-    "lib",
     "dist"
   ],
   "repository": {
