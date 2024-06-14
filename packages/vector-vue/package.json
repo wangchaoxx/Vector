@@ -1,6 +1,6 @@
 {
   "name": "vector-vue",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
   "homepage": "https://github.com/980320/Vector#readme",
@@ -20,7 +20,8 @@
   },
   "scripts": {
     "test": "node ./__tests__/vector-vue.test.js",
-    "build": "vite build"
+    "build": "vite build",
+    "prepublishOnly": "pnpm run build"
   },
   "bugs": {
     "url": "https://github.com/980320/Vector/issues"
