@@ -1,12 +1,12 @@
 {
   "name": "vector-vue",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
   "homepage": "https://github.com/980320/Vector#readme",
   "license": "ISC",
   "main": "lib/index.js",
-  "module": "dist/vector-vue.esm.js",
+  "module": "dist/vector-vue.es.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
