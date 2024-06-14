@@ -4,6 +4,11 @@
   "workspaces": [
     "packages/*"
   ],
+
+  "scripts": {
+    "build": "lerna run build",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
     "add": "^2.0.6",
