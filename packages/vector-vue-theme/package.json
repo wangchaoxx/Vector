@@ -1,6 +1,6 @@
 {
   "name": "@wang_chao/vector-vue-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
   "homepage": "https://github.com/980320/Vector#readme",
@@ -20,8 +20,7 @@
   "scripts": {
     "test": "node ./__tests__/vector-vue-theme.test.js",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "prepublishOnly": "pnpm run build-storybook"
+    "build-storybook": "storybook build"
   },
   "bugs": {
     "url": "https://github.com/980320/Vector/issues"
@@ -39,5 +38,5 @@
     "@storybook/vue3-vite": "8.1.7",
     "storybook": "8.1.7"
   },
-  "gitHead": "f47df5d91ab8dcd17743c8bf55cacdb3acfb2926"
+  "gitHead": "a0aea7e88fc8ca0b4e97078b5ac9ab04d00eaae0"
 }
