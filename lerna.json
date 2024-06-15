@@ -8,8 +8,12 @@
         "prepublish": "pnpm run build"
       },
       "conventionalCommits": true,
-      "message": "chore(release): publish"
+      "message": "chore(release): publish",
+      "registry": "http://192.168.77.132:8081//repository/npm-hosted/"
     }
+  },
+  "publishConfig": {
+    "registry": "http://192.168.77.132:8081//repository/npm-hosted/"
   },
   "version": "independent"
 }
