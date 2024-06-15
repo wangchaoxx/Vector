@@ -9,12 +9,7 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    {
-      name: '@storybook/addon-docs',
-      options: {
-        configureJSX: true, // 如果你想在MDX中使用JSX，需要将此选项设置为true
-      },
-    },
+    "@storybook/addon-docs"
   ],
   framework: {
     name: "@storybook/vue3-vite",

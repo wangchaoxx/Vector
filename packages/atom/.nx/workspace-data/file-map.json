@@ -2,13 +2,17 @@
   "version": "6.0",
   "nxVersion": "19.2.3",
   "deps": {
+    "@storybook/addon-docs": "^8.1.9",
     "ant-design-vue": "^4.2.3",
     "vue": "^3.4.21",
     "@chromatic-com/storybook": "^1.5.0",
+    "@mdx-js/rollup": "^3.0.1",
+    "@mdx-js/vue": "^3.0.1",
     "@storybook/addon-essentials": "^8.1.9",
     "@storybook/addon-interactions": "^8.1.9",
     "@storybook/addon-links": "^8.1.9",
     "@storybook/blocks": "^8.1.9",
+    "@storybook/builder-vite": "^8.1.9",
     "@storybook/test": "^8.1.9",
     "@storybook/vue3": "^8.1.9",
     "@storybook/vue3-vite": "^8.1.9",
@@ -41,7 +45,7 @@
       },
       {
         "file": ".storybook/main.ts",
-        "hash": "18334204556926785135"
+        "hash": "12802714616046384469"
       },
       {
         "file": ".storybook/preview.ts",
@@ -50,6 +54,10 @@
       {
         "file": ".vscode/extensions.json",
         "hash": "2924711551599599544"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "9688951544698562873"
       },
       {
         "file": "README.md",
@@ -61,11 +69,11 @@
       },
       {
         "file": "package.json",
-        "hash": "10374035606868324965"
+        "hash": "10605143204135740944"
       },
       {
         "file": "pnpm-lock.yaml",
-        "hash": "12720565250861447376"
+        "hash": "11457779033698299496"
       },
       {
         "file": "public/vite.svg",
@@ -81,23 +89,31 @@
       },
       {
         "file": "src/components/Button/index.ts",
-        "hash": "15336157991252696220"
+        "hash": "4350776110960442586"
       },
       {
         "file": "src/components/Button/index.vue",
-        "hash": "3290574685143424283"
+        "hash": "17323379610968684914"
+      },
+      {
+        "file": "src/components/Table/index.vue",
+        "hash": "7168523748566820662"
       },
       {
         "file": "src/main.ts",
-        "hash": "12957154901875844942"
+        "hash": "1617869376535494801"
       },
       {
         "file": "src/stories/Button.stories.ts",
-        "hash": "3164565481023514902"
+        "hash": "16827239557986335566"
       },
       {
         "file": "src/stories/Configure.mdx",
-        "hash": "14702098939208685613"
+        "hash": "5913250989381968094"
+      },
+      {
+        "file": "src/stories/Table.stories.ts",
+        "hash": "10209595200195818786"
       },
       {
         "file": "src/stories/assets/accessibility.png",
@@ -173,7 +189,7 @@
       },
       {
         "file": "tsconfig.json",
-        "hash": "8185796477474808117"
+        "hash": "9586056273931396790"
       },
       {
         "file": "tsconfig.node.json",
