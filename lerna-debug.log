@@ -1,9 +1,9 @@
-50 error Error: Command failed with exit code 128: git tag @wang_chao/atom@0.0.8 -m @wang_chao/atom@0.0.8
-50 error 致命错误：标签 '@wang_chao/atom@0.0.8' 已存在
-50 error     at makeError (/Users/wangchao/i/Vector/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
-50 error     at handlePromise (/Users/wangchao/i/Vector/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
-50 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-50 error     at async Promise.all (index 0)
-50 error     at async VersionCommand.gitCommitAndTagVersionForUpdates (/Users/wangchao/i/Vector/node_modules/.pnpm/lerna@8.1.3_encoding@0.1.13/node_modules/lerna/dist/index.js:8536:11)
-50 error     at async VersionCommand.commitAndTagUpdates (/Users/wangchao/i/Vector/node_modules/.pnpm/lerna@8.1.3_encoding@0.1.13/node_modules/lerna/dist/index.js:8511:18)
-50 error     at async Promise.all (index 0)
+49 error Error: Command failed with exit code 128: git tag @wang_chao/atom@0.1.0 -m @wang_chao/atom@0.1.0
+49 error 致命错误：标签 '@wang_chao/atom@0.1.0' 已存在
+49 error     at makeError (/Users/wangchao/i/Vector/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
+49 error     at handlePromise (/Users/wangchao/i/Vector/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
+49 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+49 error     at async Promise.all (index 0)
+49 error     at async VersionCommand.gitCommitAndTagVersionForUpdates (/Users/wangchao/i/Vector/node_modules/.pnpm/lerna@8.1.3_encoding@0.1.13/node_modules/lerna/dist/index.js:8536:11)
+49 error     at async VersionCommand.commitAndTagUpdates (/Users/wangchao/i/Vector/node_modules/.pnpm/lerna@8.1.3_encoding@0.1.13/node_modules/lerna/dist/index.js:8511:18)
+49 error     at async Promise.all (index 0)
