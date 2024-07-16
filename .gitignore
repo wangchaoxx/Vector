@@ -1,1 +1,5 @@
 node_modules/
+*storybook.log
+
+packages/atom/dist/*
+packages/atom-theme/storybook-static/*

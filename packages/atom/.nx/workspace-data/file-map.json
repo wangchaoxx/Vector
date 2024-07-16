@@ -1,0 +1,204 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.2.3",
+  "deps": {
+    "@storybook/addon-docs": "^8.1.9",
+    "ant-design-vue": "^4.2.3",
+    "vue": "^3.4.21",
+    "@chromatic-com/storybook": "^1.5.0",
+    "@mdx-js/rollup": "^3.0.1",
+    "@mdx-js/vue": "^3.0.1",
+    "@storybook/addon-essentials": "^8.1.9",
+    "@storybook/addon-interactions": "^8.1.9",
+    "@storybook/addon-links": "^8.1.9",
+    "@storybook/blocks": "^8.1.9",
+    "@storybook/builder-vite": "^8.1.9",
+    "@storybook/test": "^8.1.9",
+    "@storybook/vue3": "^8.1.9",
+    "@storybook/vue3-vite": "^8.1.9",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "storybook": "^8.1.9",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".cache/storybook/default/dev-server/a5a8bf6e622aef57065c6498611f40c911543d7d-3920d97c51b8ad2521918fb1205babd22b0ed3d7",
+        "hash": "17536320949112487593"
+      },
+      {
+        "file": ".cache/storybook/default/dev-server/a5a8bf6e622aef57065c6498611f40c911543d7d-43fdebe5fc35e4e9fabee9a83c7faea931b05ea0",
+        "hash": "9590067986411805306"
+      },
+      {
+        "file": ".cache/storybook/default/dev-server/a5a8bf6e622aef57065c6498611f40c911543d7d-f086b87885981c04ce7a583ff90a49313de83de7",
+        "hash": "1667511142596048856"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "13046175384202504187"
+      },
+      {
+        "file": ".storybook/main.ts",
+        "hash": "12802714616046384469"
+      },
+      {
+        "file": ".storybook/preview.ts",
+        "hash": "8805441970452287120"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "2924711551599599544"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "9688951544698562873"
+      },
+      {
+        "file": "README.md",
+        "hash": "12201597548300786130"
+      },
+      {
+        "file": "index.html",
+        "hash": "2041538145237984364"
+      },
+      {
+        "file": "package.json",
+        "hash": "10605143204135740944"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "11457779033698299496"
+      },
+      {
+        "file": "public/vite.svg",
+        "hash": "16046085400642193116"
+      },
+      {
+        "file": "src/assets/vue.svg",
+        "hash": "6215844894841429247"
+      },
+      {
+        "file": "src/components/Button/index.css",
+        "hash": "9641850067687118932"
+      },
+      {
+        "file": "src/components/Button/index.ts",
+        "hash": "4350776110960442586"
+      },
+      {
+        "file": "src/components/Button/index.vue",
+        "hash": "17323379610968684914"
+      },
+      {
+        "file": "src/components/Table/index.vue",
+        "hash": "7168523748566820662"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "1617869376535494801"
+      },
+      {
+        "file": "src/stories/Button.stories.ts",
+        "hash": "16827239557986335566"
+      },
+      {
+        "file": "src/stories/Configure.mdx",
+        "hash": "5913250989381968094"
+      },
+      {
+        "file": "src/stories/Table.stories.ts",
+        "hash": "10209595200195818786"
+      },
+      {
+        "file": "src/stories/assets/accessibility.png",
+        "hash": "8320090732909952534"
+      },
+      {
+        "file": "src/stories/assets/accessibility.svg",
+        "hash": "15602003233623176060"
+      },
+      {
+        "file": "src/stories/assets/addon-library.png",
+        "hash": "16374768047356923990"
+      },
+      {
+        "file": "src/stories/assets/assets.png",
+        "hash": "1689741917386238418"
+      },
+      {
+        "file": "src/stories/assets/avif-test-image.avif",
+        "hash": "4094029619605446073"
+      },
+      {
+        "file": "src/stories/assets/context.png",
+        "hash": "1348985643342670004"
+      },
+      {
+        "file": "src/stories/assets/discord.svg",
+        "hash": "6125630960371971211"
+      },
+      {
+        "file": "src/stories/assets/docs.png",
+        "hash": "18280049778802555454"
+      },
+      {
+        "file": "src/stories/assets/figma-plugin.png",
+        "hash": "6723570263244528263"
+      },
+      {
+        "file": "src/stories/assets/github.svg",
+        "hash": "2312545202508444152"
+      },
+      {
+        "file": "src/stories/assets/share.png",
+        "hash": "2975175390326490054"
+      },
+      {
+        "file": "src/stories/assets/styling.png",
+        "hash": "7588361746934983524"
+      },
+      {
+        "file": "src/stories/assets/testing.png",
+        "hash": "9937432921968504604"
+      },
+      {
+        "file": "src/stories/assets/theming.png",
+        "hash": "10878554446503237882"
+      },
+      {
+        "file": "src/stories/assets/tutorials.svg",
+        "hash": "6526954541826200653"
+      },
+      {
+        "file": "src/stories/assets/youtube.svg",
+        "hash": "14842170009963527645"
+      },
+      {
+        "file": "src/style.css",
+        "hash": "9062188384862178705"
+      },
+      {
+        "file": "src/vite-env.d.ts",
+        "hash": "12946363841406869089"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "9586056273931396790"
+      },
+      {
+        "file": "tsconfig.node.json",
+        "hash": "4208030242441905014"
+      },
+      {
+        "file": "vite.config.ts",
+        "hash": "7270898313707944723"
+      }
+    ]
+  }
+}

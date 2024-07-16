@@ -1,4 +1,19 @@
 {
-  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "0.0.0"
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "publish": {
+      "lifecycle": {
+        "prepublish": "pnpm run build"
+      },
+      "conventionalCommits": true,
+      "message": "chore(release): publish",
+      "registry": "http://192.168.77.132:8081//repository/npm-hosted/"
+    }
+  },
+  "publishConfig": {
+    "registry": "http://192.168.77.132:8081//repository/npm-hosted/"
+  },
+  "version": "independent"
 }
