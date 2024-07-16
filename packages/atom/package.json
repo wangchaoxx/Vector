@@ -1,6 +1,6 @@
 {
   "name": "@yf/atom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
   "homepage": "https://github.com/980320/Vector#readme",
@@ -9,7 +9,7 @@
   "module": "dist/atom.es.js",
   "type": "module",
   "publishConfig": {
-    "registry": "http://192.168.77.132:8081//repository/npm-hosted/"
+    "registry": "http://192.168.77.132:8081/repository/npm-hosted/"
   },
   "directories": {
     "lib": "lib",
@@ -56,5 +56,5 @@
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.6"
   },
-  "gitHead": "fd94727da2fc0701ee4ec1278fdffb2982565b92"
+  "gitHead": "1016cd518d56172ed18349b686b99ee88971d906"
 }
