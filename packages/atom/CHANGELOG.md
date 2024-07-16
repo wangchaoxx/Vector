@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.1.0 (2024-07-16)
+
+
+### Bug Fixes
+
+* type error ([b45d6a9](https://github.com/980320/Vector/commit/b45d6a94e51a7abd9201cab9c4ff5e2c28e75154))
+
+
+### Features
+
+* 关联npm 私仓 ([b515360](https://github.com/980320/Vector/commit/b515360ff0ee22c68042f44c6d0ba07e96db7f35))
+* add table com ([c348f91](https://github.com/980320/Vector/commit/c348f918b61cd64aadce77284d0b7348ec4cb096))
+* Button com ([91bfc4e](https://github.com/980320/Vector/commit/91bfc4e29507f6793d4e1eefbd848325aeb55252))
+* init name ([4bf1c6d](https://github.com/980320/Vector/commit/4bf1c6d7271f1bb4bdff3c6e315ebfa0e5617cf8))
+* table com ([e35bee2](https://github.com/980320/Vector/commit/e35bee229ed0f78cf935b877a4ac39b0990b598d))
+
+
+
+
+
 ## [0.1.1](https://github.com/980320/Vector/compare/@wang_chao/atom@0.1.0...@wang_chao/atom@0.1.1) (2024-07-16)
 
 **Note:** Version bump only for package @wang_chao/atom

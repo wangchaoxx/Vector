@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.1.0 (2024-07-16)
+
+
+### Features
+
+* flx ([a18c537](https://github.com/980320/Vector/commit/a18c53780d6cb61839192f107dc46c626156a88a))
+* init doc ([72c16ba](https://github.com/980320/Vector/commit/72c16ba9048d133c5bca2025ee9af2ad537a1eb6))
+* init name ([4bf1c6d](https://github.com/980320/Vector/commit/4bf1c6d7271f1bb4bdff3c6e315ebfa0e5617cf8))
+
+
+
+
+
 ## [0.1.1](https://github.com/980320/Vector/compare/@wang_chao/core@0.1.0...@wang_chao/core@0.1.1) (2024-07-16)
 
 **Note:** Version bump only for package @wang_chao/core
