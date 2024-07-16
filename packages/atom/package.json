@@ -1,6 +1,6 @@
 {
   "name": "@wang_chao/atom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
   "homepage": "https://github.com/980320/Vector#readme",
@@ -56,5 +56,5 @@
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.6"
   },
-  "gitHead": "4225273cbef58c92c213b36d3943546fbd9ebabc"
+  "gitHead": "fd94727da2fc0701ee4ec1278fdffb2982565b92"
 }

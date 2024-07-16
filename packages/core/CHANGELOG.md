@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/980320/Vector/compare/@wang_chao/core@0.1.0...@wang_chao/core@0.1.1) (2024-07-16)
+
+**Note:** Version bump only for package @wang_chao/core
+
+
+
+
+
 # 0.1.0 (2024-07-16)
 
 
