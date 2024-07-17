@@ -4,7 +4,7 @@ import Button from '../components/Button/index.vue';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta = {
-  title: 'Example/Button',
+  title: 'Ordinary/Button',
   component: Button,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
@@ -36,13 +36,19 @@ type Story = StoryObj<typeof meta>;
  */
 export const Primary: Story = {
   args: {
-    label: 'Primary Button',
     type: 'primary',
   },
+  render: (args) => ({
+    components: { Button },
+    setup() {
+      return { args };
+    },
+    template: `<Button v-bind="args">Primary Button</Button>`,
+  }),
   parameters: {
     docs: {
       source: {
-        code: '<MyButton label="Primary Button" type="primary" ></MyButton>',
+        code: '<Button type="primary">Primary Button</Button>',
       },
     },
   },
@@ -50,20 +56,32 @@ export const Primary: Story = {
 
 export const Default: Story = {
   args: {
-    label: 'Default Button',
     onClick: () => console.log('Dashed button clicked!'),
   },
+  render: (args) => ({
+    components: { Button },
+    setup() {
+      return { args };
+    },
+    template: `<Button v-bind="args">Primary Button</Button>`,
+  }),
 };
 
 export const Dashed: Story = {
   args: {
-    label: 'Dashed Button',
     type: 'dashed',
   },
+  render: (args) => ({
+    components: { Button },
+    setup() {
+      return { args };
+    },
+    template: `<Button v-bind="args">Primary Button</Button>`,
+  }),
   parameters: {
     docs: {
       source: {
-        code: '<MyButton label="Dashed Button" type="dashed" ></MyButton>',
+        code: '<Button label="Dashed Button" type="dashed" >Dashed Button</Button>',
       },
     },
   },
@@ -71,26 +89,38 @@ export const Dashed: Story = {
 
 export const Text: Story = {
   args: {
-    label: 'Text Button',
     type: 'text',
   },
+  render: (args) => ({
+    components: { Button },
+    setup() {
+      return { args };
+    },
+    template: `<Button v-bind="args">Primary Button</Button>`,
+  }),
   parameters: {
     docs: {
       source: {
-        code: '<MyButton label="Text Button" type="text" ></MyButton>',
+        code: '<Button label="Text Button" type="text" >Text Button</Button>',
       },
     },
   },
 };
 export const Link: Story = {
   args: {
-    label: 'Link Button',
     type: 'link',
   },
+  render: (args) => ({
+    components: { Button },
+    setup() {
+      return { args };
+    },
+    template: `<Button v-bind="args">Primary Button</Button>`,
+  }),
   parameters: {
     docs: {
       source: {
-        code: '<MyButton label="Link Button" type="link" ></MyButton>',
+        code: '<Button label="Link Button" type="link" >Link Button</Button>',
       },
     },
   },

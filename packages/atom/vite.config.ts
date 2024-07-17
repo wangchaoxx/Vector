@@ -4,6 +4,11 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [vue()],
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/main.ts'), // 入口文件路径
@@ -23,6 +28,13 @@ export default defineConfig({
   server: {
     fs: {
       allow: ['..']
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        additionalData: `@import "${path.resolve(__dirname, 'src/design/index.less')}";`
+      }
     }
   }
 })
