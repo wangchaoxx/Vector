@@ -21,6 +21,10 @@ const props = withDefaults(defineProps<{
    */
   block?: boolean,
   /**
+   * 设置按钮载入状态
+   */
+  loading?: boolean | { delay: number },
+  /**
    * 按钮失效状态
    */
   disabled?: boolean,
