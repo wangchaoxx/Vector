@@ -1,17 +1,17 @@
 {
   "name": "@yf/core",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
   "homepage": "https://github.com/980320/Vector#readme",
   "license": "ISC",
-  "main": "lib/core.js",
+  "main": "src/index.ts",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "publishConfig": {
     "access": "public",
@@ -22,10 +22,17 @@
     "url": "git+https://github.com/980320/Vector.git"
   },
   "scripts": {
+    "//build": "pnpm unbuild",
+    "//stub": "pnpm unbuild --stub",
+    "clean": "pnpm rimraf .turbo node_modules dist",
     "test": "node ./__tests__/@vector/core.test.js"
   },
   "bugs": {
     "url": "https://github.com/980320/Vector/issues"
   },
-  "gitHead": "1016cd518d56172ed18349b686b99ee88971d906"
+  "gitHead": "1016cd518d56172ed18349b686b99ee88971d906",
+  "dependencies": {
+    "unbuild": "^2.0.0",
+    "vue": "^3.4.31"
+  }
 }
