@@ -12,6 +12,7 @@ const meta = {
     size: { control: 'select', options: ['large', 'middle', 'small'] },
     ghost: { control: 'boolean' },
     type: { control: 'select', options: ['primary', 'ghost', 'dashed', 'text'] },
+    color: { control: 'select', options: ['primary', 'error', 'warning', 'success', ''] },
     danger: { control: 'boolean' },
   },
   args: {
