@@ -3,3 +3,5 @@ node_modules/
 
 packages/atom/dist/*
 packages/atom-theme/storybook-static/*
+
+packages/core/dist/*
