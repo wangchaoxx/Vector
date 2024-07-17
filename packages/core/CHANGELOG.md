@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/980320/Vector/compare/@yf/core@0.1.1...@yf/core@0.1.2) (2024-07-17)
+
+**Note:** Version bump only for package @yf/core
+
+
+
+
+
 ## [0.1.1](https://github.com/980320/Vector/compare/@yf/core@0.1.0...@yf/core@0.1.1) (2024-07-16)
 
 **Note:** Version bump only for package @yf/core
