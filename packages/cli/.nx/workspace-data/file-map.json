@@ -1,0 +1,46 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.2.3",
+  "deps": {
+    "unbuild": "^2.0.0"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": "README.md",
+        "hash": "17164804415944190867"
+      },
+      {
+        "file": "__tests__/cli.test.js",
+        "hash": "7962820277514598357"
+      },
+      {
+        "file": "bin/www",
+        "hash": "10853277264740347185"
+      },
+      {
+        "file": "dist/index.cjs",
+        "hash": "598137119257623927"
+      },
+      {
+        "file": "dist/index.mjs",
+        "hash": "8240639833289517358"
+      },
+      {
+        "file": "package.json",
+        "hash": "986942115291045905"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "769239861788727002"
+      },
+      {
+        "file": "src/index.js",
+        "hash": "17489875463686863405"
+      }
+    ]
+  }
+}
