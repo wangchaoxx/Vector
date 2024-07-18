@@ -29,6 +29,8 @@
     "url": "https://github.com/wangchaoxx/Vector/issues"
   },
   "dependencies": {
+    "fs-extra": "^11.2.0",
+    "inquirer": "^10.0.3",
     "unbuild": "^2.0.0"
   }
 }
