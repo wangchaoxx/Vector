@@ -12,7 +12,7 @@ const inquirer = require('inquirer');
 const fsExtra = require('fs-extra');
 const ora = require('ora');
 
-const spinner = ora('正在下载页面模版...'); 
+const spinner = ora('正在下载页面模版...');
 
 // 获取当前所在目录
 const currentDir = process.cwd();
@@ -31,10 +31,10 @@ function readRemoteFile(url) {
   
       res.on('end', () => {
         resolve(data);
-        spinner.succeed('模版下载成功！'); 
+        spinner.succeed('模版下载成功！');
       });
     }).on('error', (err) => {
-      spinner.fail('fail'); 
+      spinner.fail('fail');
       reject(err)
       console.error(`Error: ${err.message}`);
     });
@@ -48,7 +48,7 @@ function readRemoteFile(url) {
  */
 async function createPage() {
   // 输入页面名称
-  const { pageName } = await inquirer.default.prompt([
+  const { pageName } = await inquirer.prompt([
     {
       type: 'input',
       name: 'pageName',
@@ -88,7 +88,7 @@ async function createPage() {
  */
 async function createModal() {
   // 输入弹框名称
-  const { modalName } = await inquirer.default.prompt([
+  const { modalName } = await inquirer.prompt([
     {
       type: 'input',
       name: 'modalName',
@@ -132,7 +132,7 @@ function createTemplate() {
       choices: ['page', 'modal']
     }
   ];
-  inquirer.default.prompt(templateType).then(async answers => {
+  inquirer.prompt(templateType).then(async answers => {
     console.log('选择的模板类型：', answers.templateType);
     if (answers.templateType === 'page') {
       createPage();

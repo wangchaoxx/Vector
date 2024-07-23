@@ -1,6 +1,6 @@
 {
   "name": "@wang_chao/cli",
-  "version": "0.1.6",
+  "version": "0.2.24",
   "description": "> TODO: description",
   "author": "chao_wang <chao_wang@gmail.com>",
   "homepage": "https://github.com/wangchaoxx/Vector#readme",
@@ -8,14 +8,14 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "bin": {
-    "vector-cli": "./bin/www"
+    "vector-cli": "./bin/www.js"
   },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "fs-extra": "^11.2.0",
-    "inquirer": "^10.0.3",
+    "inquirer": "^8.2.0",
     "ora": "^5.0.0",
     "unbuild": "^2.0.0"
   }
