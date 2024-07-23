@@ -1,11 +1,12 @@
 {
   "name": "@wang_chao/cli",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "> TODO: description",
   "author": "chao_wang <chao_wang@gmail.com>",
   "homepage": "https://github.com/wangchaoxx/Vector#readme",
   "license": "ISC",
-  "main": "src/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "bin": {
     "vector-cli": "./bin/www"
   },
@@ -21,7 +22,7 @@
     "url": "git+https://github.com/wangchaoxx/Vector.git"
   },
   "scripts": {
-    "//build": "pnpm unbuild",
+    "build": "pnpm unbuild",
     "//stub": "pnpm unbuild --stub",
     "test": "node ./__tests__/cli.test.js"
   },
