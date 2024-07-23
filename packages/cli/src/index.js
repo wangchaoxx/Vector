@@ -10,7 +10,7 @@ console.log('Hello from vector-cli');
 const path = require('path');
 const inquirer = require('inquirer');
 const fsExtra = require('fs-extra');
-import ora from 'ora';
+const ora = require('ora');
 
 const spinner = ora('正在下载页面模版...'); 
 
@@ -72,8 +72,9 @@ async function createPage() {
   await fsExtra.ensureDir(dirPath);
   const fs = require('fs');
   // 读取模板文件
-  const data = fs.readFileSync(__dirname + '/template/page/index.vue', 'utf8');
-  const indexData = fs.readFileSync(__dirname + '/template/page/index.data.ts', 'utf8');
+
+  const data = await readRemoteFile('https://raw.githubusercontent.com/wangchaoxx/projectTemplate/main/template/page/index.vue')
+  const indexData = await readRemoteFile('https://raw.githubusercontent.com/wangchaoxx/projectTemplate/main/template/page/index.data.ts')
   // 创建文件
   fs.writeFileSync(path.join(dirPath, 'index.vue'), data);
   console.log('创建文件：', dirPath + '/index.vue');
@@ -111,8 +112,8 @@ async function createModal() {
   console.log('创建目录：', dirPath);
   const fs = require('fs');
   // 读取模板文件
-  const data = fs.readFileSync(__dirname + '/template/modal/index.vue', 'utf8');
-  const indexData = fs.readFileSync(__dirname + '/template/modal/index.data.ts', 'utf8');
+  const data = await readRemoteFile('https://raw.githubusercontent.com/wangchaoxx/projectTemplate/main/template/modal/index.vue')
+  const indexData = await readRemoteFile('https://raw.githubusercontent.com/wangchaoxx/projectTemplate/main/template/modal/index.data.ts')
   // 创建文件
   fs.writeFileSync(path.join(dirPath, 'index.vue'), data);
   console.log('创建文件：', dirPath + '/index.vue');
@@ -134,9 +135,7 @@ function createTemplate() {
   inquirer.default.prompt(templateType).then(async answers => {
     console.log('选择的模板类型：', answers.templateType);
     if (answers.templateType === 'page') {
-      // createPage();
-      const data = await readRemoteFile('https://raw.githubusercontent.com/wangchaoxx/projectTemplate/main/template/modal/index.vue')
-      console.log(data);
+      createPage();
     } else if (answers.templateType === 'modal') {
       createModal();
     }
