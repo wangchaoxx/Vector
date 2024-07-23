@@ -10,10 +10,38 @@ console.log('Hello from vector-cli');
 const path = require('path');
 const inquirer = require('inquirer');
 const fsExtra = require('fs-extra');
+import ora from 'ora';
+
+const spinner = ora('正在下载页面模版...'); 
 
 // 获取当前所在目录
 const currentDir = process.cwd();
 console.log('当前目录：', currentDir);
+
+const https = require('https');
+
+function readRemoteFile(url) {
+  spinner.start(); 
+  return new Promise((resolve, reject) => {
+    https.get(url, (res) => {
+      let data = '';
+      res.on('data', (chunk) => {
+        data += chunk;
+      });
+  
+      res.on('end', () => {
+        resolve(data);
+        spinner.succeed('模版下载成功！'); 
+      });
+    }).on('error', (err) => {
+      spinner.fail('fail'); 
+      reject(err)
+      console.error(`Error: ${err.message}`);
+    });
+
+  });
+}
+
 
 /**
  * 生成页面模版
@@ -103,10 +131,12 @@ function createTemplate() {
       choices: ['page', 'modal']
     }
   ];
-  inquirer.default.prompt(templateType).then(answers => {
+  inquirer.default.prompt(templateType).then(async answers => {
     console.log('选择的模板类型：', answers.templateType);
     if (answers.templateType === 'page') {
-      createPage();
+      // createPage();
+      const data = await readRemoteFile('https://raw.githubusercontent.com/wangchaoxx/projectTemplate/main/template/modal/index.vue')
+      console.log(data);
     } else if (answers.templateType === 'modal') {
       createModal();
     }
