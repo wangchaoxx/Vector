@@ -1,6 +1,6 @@
 'use strict';
 
-console.log('Hello from vector-cli');
+console.log('Hello from vector');
 
 /**
  * 1. 生成页面模版

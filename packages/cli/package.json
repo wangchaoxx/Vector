@@ -1,6 +1,6 @@
 {
   "name": "@wang_chao/cli",
-  "version": "0.2.24",
+  "version": "0.2.26",
   "description": "> TODO: description",
   "author": "chao_wang <chao_wang@gmail.com>",
   "homepage": "https://github.com/wangchaoxx/Vector#readme",
@@ -8,7 +8,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "bin": {
-    "vector-cli": "./bin/www.js"
+    "vector": "./bin/www.js"
   },
   "directories": {
     "lib": "lib",
