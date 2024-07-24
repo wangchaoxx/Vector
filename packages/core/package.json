@@ -1,5 +1,5 @@
 {
-  "name": "@yf/core",
+  "name": "@vector/core",
   "version": "0.1.2",
   "description": "> TODO: description",
   "author": "chao_wang <wangchao2203@gmail.com>",
@@ -14,8 +14,7 @@
     "src"
   ],
   "publishConfig": {
-    "access": "public",
-    "registry": "http://192.168.77.132:8081/repository/npm-hosted/"
+    "access": "public"
   },
   "repository": {
     "type": "git",

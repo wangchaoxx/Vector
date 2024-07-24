@@ -5,3 +5,5 @@ packages/atom/dist/*
 packages/atom-theme/storybook-static/*
 
 packages/core/dist/*
+
+packages/cli/dist/*
