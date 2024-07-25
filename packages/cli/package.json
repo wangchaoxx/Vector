@@ -30,6 +30,7 @@
     "url": "https://github.com/wangchaoxx/Vector/issues"
   },
   "dependencies": {
+    "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^8.2.0",
     "ora": "^5.0.0",
