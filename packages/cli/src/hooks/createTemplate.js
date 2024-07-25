@@ -5,8 +5,6 @@ const fsExtra = require('fs-extra');
 import { readRemoteFile } from './readFile'
 
 const currentDir = process.cwd();
-console.log('当前目录：', currentDir);
-
 
 /**
  * 生成页面模版
@@ -39,8 +37,8 @@ export const createPage = async function () {
 
   try {
     // 读取模板文件
-    const data = await readRemoteFile('https://raw.githubusercontent.com/wangchaoxx/projectTemplate/main/template/page/index.vue')
-    const indexData = await readRemoteFile('https://raw.githubusercontent.com/wangchaoxx/projectTemplate/main/template/page/index.data.ts')
+    const data = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/page/index.vue')
+    const indexData = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/page/index.data.ts')
     // 创建文件
     fs.writeFileSync(path.join(dirPath, 'index.vue'), data);
     console.log('创建文件：', dirPath + '/index.vue');
@@ -85,8 +83,8 @@ export const createModal = async () => {
   const fs = require('fs');
   // 读取模板文件
   try {
-    const data = await readRemoteFile('https://raw.githubusercontent.com/wangchaoxx/projectTemplate/main/template/modal/index.vue')
-    const indexData = await readRemoteFile('https://raw.githubusercontent.com/wangchaoxx/projectTemplate/main/template/modal/index.data.ts')
+    const data = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/modal/index.vue')
+    const indexData = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/modal/index.data.ts')
     // 创建文件
     fs.writeFileSync(path.join(dirPath, 'index.vue'), data);
     console.log('创建文件：', dirPath + '/index.vue');
@@ -98,4 +96,45 @@ export const createModal = async () => {
     fsExtra.removeSync(dirPath);
   }
 
+}
+
+/**
+ * 生成mock接口模版
+ */
+
+export const createMock = async () => {
+  const { mockName } = await inquirer.prompt([
+    {
+      type: 'input',
+      name:'mockName',
+      message: '请输入mock接口文件名称'
+    }
+  ]);
+
+  if (!mockName) {
+    console.error('Error: Mock name is required.');
+    return;
+  }
+
+  const dirPath = path.join(currentDir, mockName);
+  // 确保目录不存在
+  if (fsExtra.pathExistsSync(dirPath)) {
+    console.error('Error: Mock already exists.');
+    return;
+  }
+  // 创建文件夹
+  fsExtra.ensureDirSync(dirPath);
+  console.log('创建目录：', dirPath);
+  const fs = require('fs');
+  // 读取模板文件
+  try {
+    const data = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/mock/index.ts')
+    // 创建文件
+    fs.writeFileSync(path.join(dirPath, 'index.ts'), data);
+    console.log('创建文件：', dirPath + '/index.ts');
+    console.log(`mock接口创建成功！\n 请修改接口名称、请求参数、返回数据等信息`);
+  } catch (error) {
+    // 下载错误删除文件夹
+    fsExtra.removeSync(dirPath);
+  }
 }
