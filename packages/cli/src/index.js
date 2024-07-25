@@ -42,7 +42,7 @@ program
     } else if(name ==='mock') {
       createMock();
     }else {
-      console.log('Invalid name, please use "page" or "modal"');
+      console.log('Invalid name, please use "page" or "modal" and "mock"');
     }
   });
 
