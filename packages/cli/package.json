@@ -1,6 +1,6 @@
 {
   "name": "@wang_chao/cli",
-  "version": "0.2.27",
+  "version": "0.2.28",
   "description": "> TODO: description",
   "author": "chao_wang <chao_wang@gmail.com>",
   "homepage": "https://github.com/wangchaoxx/Vector#readme",
@@ -34,6 +34,7 @@
     "fs-extra": "^11.2.0",
     "inquirer": "^8.2.0",
     "ora": "^5.0.0",
+    "simple-git": "^3.25.0",
     "unbuild": "^2.0.0"
   }
 }
