@@ -7,3 +7,4 @@ packages/atom-theme/storybook-static/*
 packages/core/dist/*
 
 packages/cli/dist/*
+packages/utils/dist/*

@@ -138,3 +138,44 @@ export const createMock = async () => {
     fsExtra.removeSync(dirPath);
   }
 }
+
+/**
+ * 生成API接口文档
+ */
+
+export const createApi = async () => {
+  const { apiName } = await inquirer.prompt([
+    {
+      type: 'input',
+      name: 'apiName',
+      message: '请输入API名称'
+    }
+  ]);
+
+  if (!apiName) {
+    console.error('Error: API name is required.');
+    return;
+  }
+
+  const dirPath = path.join(currentDir, apiName);
+  // 确保目录不存在
+  if (fsExtra.pathExistsSync(dirPath)) {
+    console.error('Error: API already exists.');
+    return;
+  }
+  // 创建文件夹
+  fsExtra.ensureDirSync(dirPath);
+  console.log('创建目录：', dirPath);
+  const fs = require('fs');
+  // 读取模板文件
+  try {
+    const data = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/api/index.ts')
+    // 创建文件
+    fs.writeFileSync(path.join(dirPath, 'index.ts'), data);
+    console.log('创建文件：', dirPath + '/index.ts');
+    console.log(`api创建成功！\n 请修改接口名称、接口字段、请求参数、返回数据等信息`);
+  } catch (error) {
+    // 下载错误删除文件夹
+    fsExtra.removeSync(dirPath);
+  }
+}
