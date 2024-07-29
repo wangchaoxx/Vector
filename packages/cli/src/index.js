@@ -20,7 +20,7 @@ const program = new Command();
 const currentDir = process.cwd();
 console.log('当前目录：', currentDir);
 
-import { createModal, createPage, createMock } from './hooks/createTemplate';
+import { createModal, createPage, createMock, createApi } from './hooks/createTemplate';
 
 /**
  * @description: 版本号
@@ -43,6 +43,8 @@ program
       createModal();
     } else if (name === 'mock') {
       createMock();
+    } else if(name === 'api') {
+      createApi();
     } else {
       console.log('Invalid name, please use "page" or "modal" and "mock"');
     }

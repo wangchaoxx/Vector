@@ -1,7 +1,3 @@
-'use strict';
+import log from './log';
 
-module.exports = utils;
-
-function utils() {
-  return 'Hello from utils';
-}
+export { log };

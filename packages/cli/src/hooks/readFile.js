@@ -20,6 +20,5 @@ export const readRemoteFile = function (url) {
       reject(err)
       console.error(`Error: ${err.message}`);
     });
-
   });
 }
