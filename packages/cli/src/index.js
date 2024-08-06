@@ -13,7 +13,9 @@ const git = require('simple-git');
 const packageJson = require('../package.json');
 const { Command } = require('commander');
 const path = require('path');
+import { log } from '@wang_chao/utils'
 
+log.info('Hello from vector');
 const program = new Command();
 
 // 获取当前所在目录
