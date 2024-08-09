@@ -1,5 +1,23 @@
 /// <reference types="node" />
 
+type LogLevels = "silly" | "verbose" | "info" | "timing" | "http" | "notice" | "warn" | "error" | "silent";
+
+interface StyleObject {
+  fg?: string | undefined;
+  bg?: string | undefined;
+  bold?: boolean | undefined;
+  inverse?: boolean | undefined;
+  underline?: boolean | undefined;
+  bell?: boolean | undefined;
+}
+
+interface MessageObject {
+  id: number;
+  level: string;
+  prefix: string;
+  message: string;
+  messageRaw: string;
+}
 
 interface log {
   level: string;
