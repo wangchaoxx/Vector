@@ -30,13 +30,13 @@
     "url": "https://github.com/wangchaoxx/Vector/issues"
   },
   "dependencies": {
+    "@wang_chao/utils": "workspace:*",
     "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^8.2.0",
     "npmlog": "^7.0.1",
     "ora": "^5.0.0",
     "simple-git": "^3.25.0",
-    "unbuild": "^2.0.0",
-    "@wang_chao/utils": "workspace:*"
+    "unbuild": "^2.0.0"
   }
 }

@@ -37,7 +37,7 @@ export const createPage = async function () {
 
   try {
     // 读取模板文件
-    const data = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/page/index.vue')
+    const data = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/page/index.tsx')
     const indexData = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/page/index.data.ts')
     // 创建文件
     fs.writeFileSync(path.join(dirPath, 'index.vue'), data);
@@ -45,7 +45,7 @@ export const createPage = async function () {
     fs.writeFileSync(path.join(dirPath, 'index.data.ts'), indexData);
     console.log('创建文件：', dirPath + '/index.data.ts');
     console.log(`页面创建成功！\n 请修改组件名称、路由名称、请求接口等信息`);
-    
+
   } catch (error) {
     // 下载模版文件错误，删除文件夹
     fsExtra.removeSync(dirPath);
@@ -57,7 +57,7 @@ export const createPage = async function () {
  * 生成弹框模版
  */
 export const createModal = async () => {
-  
+
   const { modalName } = await inquirer.prompt([
     {
       type: 'input',
@@ -83,7 +83,7 @@ export const createModal = async () => {
   const fs = require('fs');
   // 读取模板文件
   try {
-    const data = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/modal/index.vue')
+    const data = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/modal/index.tsx')
     const indexData = await readRemoteFile('https://gitee.com/wangchao2203/projectTemplate/raw/main/template/modal/index.data.ts')
     // 创建文件
     fs.writeFileSync(path.join(dirPath, 'index.vue'), data);
@@ -106,7 +106,7 @@ export const createMock = async () => {
   const { mockName } = await inquirer.prompt([
     {
       type: 'input',
-      name:'mockName',
+      name: 'mockName',
       message: '请输入mock接口文件名称'
     }
   ]);
