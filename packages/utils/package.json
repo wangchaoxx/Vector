@@ -7,6 +7,7 @@
   "license": "ISC",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
+  "types": "index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -29,5 +30,9 @@
   "dependencies": {
     "npmlog": "^7.0.1",
     "unbuild": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "@types/npmlog": "^7.0.0"
   }
 }

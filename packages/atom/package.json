@@ -33,7 +33,6 @@
   },
   "dependencies": {
     "@storybook/addon-docs": "^8.1.9",
-    "@yf/core": "^0.1.2",
     "ant-design-vue": "^4.2.3",
     "vue": "^3.4.21"
   },

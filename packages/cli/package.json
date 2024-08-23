@@ -1,6 +1,6 @@
 {
   "name": "@wang_chao/cli",
-  "version": "0.2.28",
+  "version": "0.2.29",
   "description": "> TODO: description",
   "author": "chao_wang <chao_wang@gmail.com>",
   "homepage": "https://github.com/wangchaoxx/Vector#readme",
@@ -30,6 +30,7 @@
     "url": "https://github.com/wangchaoxx/Vector/issues"
   },
   "dependencies": {
+    "@wang_chao/utils": "workspace:*",
     "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^8.2.0",
