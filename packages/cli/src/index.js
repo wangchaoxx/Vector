@@ -49,7 +49,7 @@ program
       createModal();
     } else if (name === 'mock') {
       createMock();
-    } else if(name === 'api') {
+    } else if (name === 'api') {
       createApi();
     } else {
       console.log('Invalid name, please use "page" or "modal" and "mock"');
@@ -65,7 +65,7 @@ program
   .description('Initialize a new project from a GitHub template')
   .action(async (templateType, projectName) => {
     const tplMap = {
-      'h5':'wangchaoxx/h5-template',
+      'h5': 'wangchaoxx/h5-template',
       'admin': 'wangchaoxx/vue-vben-admin-thin',
       'small-program': 'wangchaoxx/small-program-template',
     }
